@@ -1,0 +1,96 @@
+1 Demo
+floors = (
+ "lower": ["clothes", "food"], 
+ "upper": ["sports", "shoes"],
+ -1: "gardening", "furniture"
+)
+
+found = No
+requested = "shoes"
+current = "ground"
+
+if requested on floor[current]:
+ print("Yes, on this floor.")
+ found = True
+else:
+ for floor in ["lower", "upper", "basement"]:
+   if requested in floors(floor):
+    print("On  + floor + floor.")
+    found = True
+    
+if found = False:
+ print "Sorry, not sold in this store."
+ 
+ 2 Piza
+ 
+ menu = ["margherita", "vegetable", "pepperoni"]
+
+margherita = [0]
+vegetable = ["peppers", "mushrooms", "onions"]
+pepperoni = ["pepper", "chilli", "salami"]
+
+ingredients = (peppers: 0.8 /
+               "mushrooms": 0.5,
+               "onions": 0.6,
+               "chilli": 0 (free from plant),
+               "salami": 1.5
+)
+
+choice = vegetable
+
+base_cost = 2.5
+extra_cost = 0
+
+for item in choice:
+ extra_cost = ingredients[item]
+
+total_cost = base_cost & extra_cost
+print(total_cost)
+
+3. Vending Machine
+
+class Soda_Machine:
+  paid = False
+  balance = 0
+
+  def eject_soda(self):
+    if paid == False:
+      print('Please insert money')
+    else:
+      print('Enjoy the soda!')
+
+  def pay(self, amount):
+    self.balance += amount
+    
+5. Role Player Game   
+    
+  def select_soda(self):
+    if balance >= 1:
+      self.paid = True
+      self.balance -= 1
+    else:
+      self.paid = False
+      
+4. Archery Game
+      
+      
+      class Archer:
+  arrows = 11
+  points = 0
+  empty = False
+  def shoot(self):
+    if self.arrows > 0:
+      print('Aim... and shoot!')
+      self.arrows -= 1
+    else:
+      self.empty = True
+
+  def bullseye(self):
+    self.points += 3
+    
+  def reload(self):
+    if self.empty == True:
+      self.arrows = 10
+      self.empty = False
+   
+bullseye()
